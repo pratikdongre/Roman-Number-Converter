@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Roman Numeral Converter</title>
+	<h1 align="center" color="red">ROMAN NUMBER CONVERTER</h1>
+	<link rel="stylesheet" href="main.css">
+
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+<form>
+<div class="container">
+	<div class="inside">
+	  <div class="form-group"style="text-align:center";>
+			<input type="number" id="text" name="number" max="3999" min="1" placeholder="Enter Number">
+			<input id="result" placeholder="Result" readonly="readonly">
+	  </div>
+
+
+	  <br>
+	  <div class="form-check"style="text-align:center";>
+		<button type="button" id="check" onclick="convertToRoman()" ><img src="check.png"/></button>
+		<button id="clear" onclick="clearText()"><img src="clear.png"/></button>
+	  </div>
+	</div>
+</div>
+</form>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyDDO_3XMHmLEY4yhHB4Zyhyqe8ijhlCKnQ",
+  authDomain: "project-94bd3.firebaseapp.com",
+  projectId: "project-94bd3",
+  storageBucket: "project-94bd3.appspot.com",
+  messagingSenderId: "745237861728",
+  appId: "1:745237861728:web:c98167e3e0057d018efa05",
+  measurementId: "G-34T4NDCSV2"
+};
+Firebase.initializeApp(firebaseConfig);
+const firestore=Firebase.firestore();
+</script>
+</body>
+</html>
